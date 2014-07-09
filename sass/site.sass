@@ -1,0 +1,44 @@
+@import "compass/reset"
+@import "bourbon/bourbon"
+@import "neat/neat"
+
+body
+  background-color: #FFF
+
+h1, h2, h3, h4
+  font-family: 'Open Sans', sans-serif
+  color: #4d4d4d
+  padding-bottom: 24px
+  
+p
+  font-family: 'Open Sans', sans-serif 
+  color: #4d4d4d
+  padding-bottom: 24px
+  
+.inner-row
+  @include outer-container()
+  width: 98%
+  max-width: 1000px
+
+#outer-wrapper
+  padding-bottom: 24px
+  
+header#page-header
+  padding-top: 24px
+ 
+  
+/*****************************************************/
+/*   media query extentions begin below...           */
+/*****************************************************/
+
+/*****************************************************/
+/* Detect tablet size and include appropriate styles */
+/*****************************************************/
+@media all and (min-width: 768px) 
+  @import "tablet"
+
+/*****************************************************/
+/* Detect tablet size and include appropriate styles */
+/*****************************************************/
+@media all and (min-width: 960px) 
+  @import "desktop"
